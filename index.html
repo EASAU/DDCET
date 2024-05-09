@@ -478,6 +478,14 @@
                     width: 8px;
                     border-radius: 50%;
                 }
+                 .rating {
+            font-size: 30px;
+            color: #ccc; /* Default star color (gray) */
+        }
+
+        .filled {
+            color: #ffca00; /* Filled star color (yellow) */
+        }
             </style>
         </head>
 
@@ -1046,6 +1054,11 @@
                             hard work.</p>
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLSfxrUEOBoCcrccrlTb3j_zt64ivdlmLglkXqCr_xOHNCOwAvg/viewform?usp=sharing"
                             target="_blank"><button class="btn btn-primary">Rate Us</button></a>
+                        <br><br>
+                         <div class="rating" id="starRating">
+                                <!-- Five star icons represented by Unicode character -->
+                                &#9734;&#9734;&#9734;&#9734;&#9734;
+                            </div>
                     </div>
                     <div class="contact-us">
                         <h3>Contact Us</h3>
@@ -1063,6 +1076,25 @@
                 </div>
             </footer>
             <script>
+function fillStarsWithPercentage(percentage) {
+            const starsContainer = document.getElementById('starRating');
+            const numberOfStars = 5; // Total number of stars
+            const filledStarsCount = Math.round((percentage / 100) * numberOfStars);
+
+            starsContainer.innerHTML = ''; // Clear previous stars
+
+            for (let i = 0; i < numberOfStars; i++) {
+                if (i < filledStarsCount) {
+                    starsContainer.innerHTML += '<span class="filled">&#9733;</span>'; // Filled star
+                } else {
+                    starsContainer.innerHTML += '<span>&#9734;</span>'; // Empty star
+                }
+            }
+        }
+
+        // Example usage:
+        const percentageValue = 83.2; // Set the percentage value (between 0 and 100)
+        fillStarsWithPercentage(percentageValue);
 
                 // JavaScript to handle notifications 
                 function showNotifications() {
