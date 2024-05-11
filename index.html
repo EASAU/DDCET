@@ -323,6 +323,7 @@
                     background-color: #fefefe;
                     margin: 15% auto;
                     margin-top: 60px;
+                    text-align: justify;
                     padding: 20px;
                     border: 1px solid #888;
                     width: 82%;
@@ -478,43 +479,49 @@
                     width: 8px;
                     border-radius: 50%;
                 }
-                 .rating {
-            font-size: 30px;
-            color: #ccc; /* Default star color (gray) */
-        }
 
-        .filled {
-            color: #ffca00; /* Filled star color (yellow) */
-        }
-                 #review{
-            display: flex;
-            flex-direction: column;
-            border: 1px solid black;
-            text-align: left;
-            height: 100px;
-            width: auto;
-            font-size: 15px;
-            padding: 4px;
-            margin-left: auto;
-            margin-right: auto;
-            overflow: scroll;
-        }
-        #review span{
-            display: flex;
-            
-        }
-        #mainrev{
-            display: flex;
-            flex-direction: column;
-            border-bottom: 1px solid gray;
-            margin-bottom: 3px;
-        }
+                .rating {
+                    font-size: 30px;
+                    color: #ccc;
+                    /* Default star color (gray) */
+                }
+
+                .filled {
+                    color: #ffca00;
+                    /* Filled star color (yellow) */
+                }
+
+                #review {
+                    display: flex;
+                    flex-direction: column;
+                    border: 1px solid black;
+                    text-align: left;
+                    height: 100px;
+                    width: auto;
+                    font-size: 15px;
+                    padding: 4px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    overflow: scroll;
+                }
+
+                #review span {
+                    display: flex;
+
+                }
+
+                #mainrev {
+                    display: flex;
+                    flex-direction: column;
+                    border-bottom: 1px solid gray;
+                    margin-bottom: 3px;
+                }
             </style>
         </head>
 
         <body>
 
-             <!-- Notification -->
+            <!-- Notification -->
             <div id="myModal" class="modal">
                 <div class="modal-content">
                     <span class="close">&times;</span>
@@ -522,10 +529,17 @@
                     <hr>
                     <!-- <p id="Logo">Best of Luck <br>For DDCET 2024</p> -->
                     <!-- <p id="Not">keep visiting ACPC <br>for latest updates</p>    -->
-
-                    <p>• DDCET 2024 Result<span id="new"><i class="fa-solid fa-arrow-left"></i> New</span>
+                    <p>• D2D Registration 2024<span id="new"><i class="fa-solid fa-arrow-left"></i> New</span>
                         <br>
-                        <img id="renote" src="Result Notification.jpg" alt="">
+                    <h4><b>Note: Use DDCET-2024 login credential and Application no. for online registration and
+                            admission process of Diploma to Degree admission for academic year
+                            2024-25.</b></h4>
+                    </p>
+                    <a href="#text" class="highlight-link">Click here for detail</a>
+
+                    <p>• DDCET 2024 Result<span id="new">
+                            <br>
+                            <img id="renote" src="Result Notification.jpg" alt="">
                     </p>
                     <a href="#text" class="highlight-link">Click here for detail</a>
                     <p>• DDCET 2024 Question Paper</p>
@@ -542,7 +556,7 @@
                         target="_blank"> GTU Sample Paper Solution <i class="fas fa-external-link-alt"></i></a>
                 </div>
             </nav>
-            <marquee>Result Date: 10 May 2024 11:00 AM</marquee>
+            <marquee>Result Date: 10 May 2024 11:00 AM | D2D Registration 2024: 15 May 2024 to 5 June 2024</marquee>
             <a href="#foot"><i id="about" class="fa-solid fa-circle-info"></i></a>
             <div class="reg">
                 <a href="https://admissions.nic.in/guj/applicant/root/Home.aspx?enc=yVQCIiq12npg+pcvNJRdc5bxAURPea7iTlqcYBBkprPmS/JT8pC13rgALgDa7Krz"
@@ -553,13 +567,15 @@
             <div id="notification-icon">
                 <a href="#" onclick="showNotifications()">
                     <i class="fa-regular fa-bell fa-shake"></i><!-- Bell icon -->
-                    <span id="notification-counter">2</span> <!--Counter -->
+                    <span id="notification-counter">3</span> <!--Counter -->
                 </a>
             </div>
             <table cellspacing="0" cellpadding="6" style="margin-bottom:-10px; margin-top: 20px;">
                 <tr>
                     <td><b>DDCET 2024</b>
-                        <br><a href="https://drive.google.com/file/d/1LxUHMxv4gije7WiJ9gBHIdrStcbDyNz8/view?usp=sharing">Answer Key</a>
+                        <br><a
+                            href="https://drive.google.com/file/d/1LxUHMxv4gije7WiJ9gBHIdrStcbDyNz8/view?usp=sharing">Answer
+                            Key</a>
                     </td>
                     <td id="2024"><a
                             href="https://drive.google.com/file/d/18tpPpaDg7-UzAZKuVaynAft13V_1UgOW/view?usp=drivesdk"
@@ -1078,18 +1094,25 @@
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLSfxrUEOBoCcrccrlTb3j_zt64ivdlmLglkXqCr_xOHNCOwAvg/viewform?usp=sharing"
                             target="_blank"><button class="btn btn-primary">Rate Us</button></a>
                         <br><br>
-                         <div class="rating" id="starRating">
-                                <!-- Five star icons represented by Unicode character -->
-                                &#9734;&#9734;&#9734;&#9734;&#9734;
-                            </div>
-                         <div id="review">
-                                <span id="mainrev"><span style=" color: #666;">25/3/2024</span>Mishra Tushar Kumar<span style=" color: #ffca00;">&#x2605&#x2605&#x2605&#x2605&#x2605</span></span>
-                                <span id="mainrev"><span style=" color: #666;">25/3/2024</span>Manju 😅<span style=" color: #ffca00;">&#x2605&#x2605&#x2605&#x2605&#x2605</span></span>
-                                <span id="mainrev"><span style=" color: #666;">25/3/2024</span>PARMAR MIHIRKUMAR MUKESHBHAI<span style=" color: #ffca00;">&#x2605&#x2605&#x2605&#x2605&#x2605</span></span>
-                                <span id="mainrev"><span style=" color: #666;">25/3/2024</span>Dev<span style=" color: #ffca00;">&#x2605&#x2605&#x2605&#x2605</span></span>
-                                <span id="mainrev"><span style=" color: #666;">26/3/2024</span>Mihir<span style=" color: #ffca00;">&#x2605&#x2605&#x2605&#x2605</span></span>
-                                <span id="mainrev"><span style=" color: #666;">1/4/2024</span>Vasava Deepal<span style=" color: #ffca00;">&#x2605&#x2605</span></span>
-                            </div>
+                        <div class="rating" id="starRating">
+                            <!-- Five star icons represented by Unicode character -->
+                            &#9734;&#9734;&#9734;&#9734;&#9734;
+                        </div>
+                        <div id="review">
+                            <span id="mainrev"><span style=" color: #666;">25/3/2024</span>Mishra Tushar Kumar<span
+                                    style=" color: #ffca00;">&#x2605&#x2605&#x2605&#x2605&#x2605</span></span>
+                            <span id="mainrev"><span style=" color: #666;">25/3/2024</span>Manju 😅<span
+                                    style=" color: #ffca00;">&#x2605&#x2605&#x2605&#x2605&#x2605</span></span>
+                            <span id="mainrev"><span style=" color: #666;">25/3/2024</span>PARMAR MIHIRKUMAR
+                                MUKESHBHAI<span
+                                    style=" color: #ffca00;">&#x2605&#x2605&#x2605&#x2605&#x2605</span></span>
+                            <span id="mainrev"><span style=" color: #666;">25/3/2024</span>Dev<span
+                                    style=" color: #ffca00;">&#x2605&#x2605&#x2605&#x2605</span></span>
+                            <span id="mainrev"><span style=" color: #666;">26/3/2024</span>Mihir<span
+                                    style=" color: #ffca00;">&#x2605&#x2605&#x2605&#x2605</span></span>
+                            <span id="mainrev"><span style=" color: #666;">1/4/2024</span>Vasava Deepal<span
+                                    style=" color: #ffca00;">&#x2605&#x2605</span></span>
+                        </div>
                     </div>
                     <div class="contact-us">
                         <h3>Contact Us</h3>
@@ -1107,25 +1130,25 @@
                 </div>
             </footer>
             <script>
-function fillStarsWithPercentage(percentage) {
-            const starsContainer = document.getElementById('starRating');
-            const numberOfStars = 5; // Total number of stars
-            const filledStarsCount = Math.round((percentage / 100) * numberOfStars);
+                function fillStarsWithPercentage(percentage) {
+                    const starsContainer = document.getElementById('starRating');
+                    const numberOfStars = 5; // Total number of stars
+                    const filledStarsCount = Math.round((percentage / 100) * numberOfStars);
 
-            starsContainer.innerHTML = ''; // Clear previous stars
+                    starsContainer.innerHTML = ''; // Clear previous stars
 
-            for (let i = 0; i < numberOfStars; i++) {
-                if (i < filledStarsCount) {
-                    starsContainer.innerHTML += '<span class="filled">&#9733;</span>'; // Filled star
-                } else {
-                    starsContainer.innerHTML += '<span>&#9734;</span>'; // Empty star
+                    for (let i = 0; i < numberOfStars; i++) {
+                        if (i < filledStarsCount) {
+                            starsContainer.innerHTML += '<span class="filled">&#9733;</span>'; // Filled star
+                        } else {
+                            starsContainer.innerHTML += '<span>&#9734;</span>'; // Empty star
+                        }
+                    }
                 }
-            }
-        }
 
-        // Example usage:
-        const percentageValue = 83.2; // Set the percentage value (between 0 and 100)
-        fillStarsWithPercentage(percentageValue);
+                // Example usage:
+                const percentageValue = 83.2; // Set the percentage value (between 0 and 100)
+                fillStarsWithPercentage(percentageValue);
 
                 // JavaScript to handle notifications 
                 function showNotifications() {
